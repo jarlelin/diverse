@@ -1,0 +1,19 @@
+GetAuthor fra dbset (lite å enhetsteste, bare route og db-integrasjon)
+Utvide GetAuthor: 
+	lage en mock av logger ( bruk moq)
+	viser at context må trekkes ut i repository med interface (moq med returns)
+	starter ncrunch og viser testkjøreren
+	ønsker å logge og logge en warning ved henting av en gitt author
+	tester først: getauthordetailed henter og gir meg averagescore på bøker
+	moq.setupsequence for tre bøker med score
+	en ny test som returnerer exception på tredje kall til google, setupsequence med throws
+	mottar og håndterer exception + logg
+	test feiler fremdeles pga feil count å dele på, må fikse feilen live.
+	kvalitetsikre refaktorering: Endre bokantall count++ til books.count og count-- => glem å fjerne count++
+	
+	
+	
+	
+	*dbcontext bør alltid inn i et repository og ef-logikken holdes innad i repository. Inject repo for testbarhet.
+	
+	
