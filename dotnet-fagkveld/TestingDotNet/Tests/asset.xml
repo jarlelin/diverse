@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<root xmlns="http://jarle.com/myschema">
+  <key>12345</key>
+  <title>mytitle</title>
+  <creator>jarle</creator>
+</root>

@@ -2,7 +2,7 @@ using System;
 
 namespace TestingDotNet
 {
-    public class MyLogger
+    public class MyLogger : IMyLogger
     {
         public void Log(string message)
         {

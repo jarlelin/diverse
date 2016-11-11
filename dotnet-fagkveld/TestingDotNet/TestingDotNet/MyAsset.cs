@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using TestingDotNet.DAL;
 
 namespace TestingDotNet
 {
@@ -11,5 +12,6 @@ namespace TestingDotNet
         public string Owner { get; set; }
         public int UserCount { get; set; }
         public double AverageReviewScore { get; set; }
+        public NewType NewType { get; set; }
     }
 }

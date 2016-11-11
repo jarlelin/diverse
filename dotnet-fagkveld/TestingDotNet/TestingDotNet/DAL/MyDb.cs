@@ -1,9 +1,10 @@
 using System;
 using System.Data.Entity;
+using System.Threading;
 
 namespace TestingDotNet.DAL
 {
-    public class MyDb : DbContext
+    public class MyDb : DbContext, IMyDb
     {
         public MyAsset TryGet(string messageKey)
         {
@@ -14,5 +15,6 @@ namespace TestingDotNet.DAL
         {
             throw new NotImplementedException();
         }
+
     }
 }
